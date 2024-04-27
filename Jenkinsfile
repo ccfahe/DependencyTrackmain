@@ -9,7 +9,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                when {buildingTag()}
+                when {
+                    tag "2"
+                    }
                
             }
 
