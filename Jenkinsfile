@@ -12,16 +12,15 @@ pipeline {
                 when {
                     tag "release-*"
                 }
-               
             }
-            stage('test'){
-                steps{
-                    echo 'Hello'
+        }
+        stage('test'){
+            steps{
+                echo 'Hello'
                 }
-            }
+        }
 
-        }
-        
-        }
     }
+}
+
 
